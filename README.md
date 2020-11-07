@@ -1,5 +1,5 @@
 # SeqLabeling
-Build a POS Tagger for Lao and Ind
+Build a POS Tagger for Lao and Bahasa Indonesia
 
 ### 文件夹
 >- corpus 语料文件夹
