@@ -176449,4 +176449,3 @@ kreatif	JJ
 ,	Z
 karya	NN
 lukis	VB
-kreYX==
