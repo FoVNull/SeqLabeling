@@ -1,4 +1,3 @@
-import kashgari.tasks.labeling
 
 
 def data_load(language, datasets_type) -> tuple:

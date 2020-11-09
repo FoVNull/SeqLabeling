@@ -6,7 +6,7 @@ if __name__ == '__main__':
     parse = argparse.ArgumentParser(description="build sentiment dictionary")
     parse.add_argument("--model", default="BiGRU_CRF",
                        help="you can choose [BiLSTM, BiGRU, BiLSTM_CRF, BiGRU_CRF, CNN_LSTM]")
-    parse.add_argument("--language", default='Ind', type=str,
+    parse.add_argument("--language", default='Lao', type=str,
                        help='corpus folder should be ./corpus/[Language]')
     args = parse.parse_args()
 
