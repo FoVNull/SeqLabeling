@@ -176449,3 +176449,4 @@ kreatif	JJ
 ,	Z
 karya	NN
 lukis	VB
+lukis	VB

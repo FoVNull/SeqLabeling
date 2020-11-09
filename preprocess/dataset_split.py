@@ -5,7 +5,7 @@ def build_dataset(path, language):
     length = len(open(path, 'r', encoding="utf-8").readlines())
     with open(path, 'r', encoding="utf-8") as f:
         for i, line in enumerate(f.readlines()):
-            seq = line.strip().split("\t")[1]
+            seq = line.strip()
             if i <= length*0.25:
                 test.append(seq)
             if length*0.25 < i <= length*0.5:
@@ -18,4 +18,4 @@ def build_dataset(path, language):
                 f.write(text+"\n")
 
 
-build_dataset("../corpus/Ind_train.txt", "Ind")
+build_dataset("../corpus/Lao_train.txt", "Lao")

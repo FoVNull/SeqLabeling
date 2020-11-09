@@ -1,6 +1,9 @@
 # SeqLabeling
 Build a POS Tagger for Lao and Bahasa Indonesia
 
+### 版本说明
+>- kashigari v2.0.1 (需要 tensorflow>=2.2.0，2.4.0以上会有waring，不影响)
+
 ### 结构说明
 >- corpus 语料文件夹
 >- reference 词性对照表等 参考资料
