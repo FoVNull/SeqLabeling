@@ -1,8 +1,11 @@
-# SeqLabeling
-Build a POS Tagger for Lao and Bahasa Indonesia
+# POS Tagger
+Build a POS Tagger for Lao and Bahasa Indonesia  
+2020云山杯“低资源语言序列标注任务评测”任务：印尼语和老挝语词性标注  
+云山杯...  
+<img src='https://upload.thwiki.cc/thumb/a/af/%E4%BA%91%E5%B1%85%E4%B8%80%E8%BD%AE%26%E4%BA%91%E5%B1%B1%EF%BC%88%E6%B1%82%E9%97%BB%E5%8F%A3%E6%8E%88%EF%BC%89.png/450px-%E4%BA%91%E5%B1%85%E4%B8%80%E8%BD%AE%26%E4%BA%91%E5%B1%B1%EF%BC%88%E6%B1%82%E9%97%BB%E5%8F%A3%E6%8E%88%EF%BC%89.png' height="300px">
 
 ### 版本说明
->- kashigari v2.0.1 (需要 tensorflow>=2.2.0，2.4.0以上会有warning，不影响)
+>- kashigari v2.0.1 (需要 tensorflow>=2.2.0，2.4.0以上会有warning，目前不影响运行)
 
 ### 结构说明
 >- corpus 语料文件夹
