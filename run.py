@@ -4,7 +4,7 @@ from utils import data_load
 
 if __name__ == '__main__':
     parse = argparse.ArgumentParser(description="build sentiment dictionary")
-    parse.add_argument("--model", default="BiGRU_CRF",
+    parse.add_argument("--model", default="BiLSTM_CRF",
                        help="you can choose [BiLSTM, BiGRU, BiLSTM_CRF, BiGRU_CRF, CNN_LSTM]")
     parse.add_argument("--language", default='Lao', type=str,
                        help='corpus folder should be ./corpus/[Language]')
@@ -16,12 +16,12 @@ if __name__ == '__main__':
 
     assert args.model in ['BiLSTM', 'BiGRU', 'BiLSTM_CRF', 'BiGRU_CRF', 'CNN_LSTM'], \
         """
-        you should choose between in 
+        you should choose among 
         ['BiLSTM_Model', 'BiGRU_Model', 'BiLSTM_CRF', 'BiGRU_CRF', 'CNN_LSTM']
         """
 
     model = globals()[args.model + "_Model"]()
-    model.fit(train_x, train_y, valid_x, valid_y, batch_size=64, epochs=10, callbacks=None, fit_kwargs=None)
+    model.fit(train_x, train_y, valid_x, valid_y, batch_size=64, epochs=15, callbacks=None, fit_kwargs=None)
     report = model.evaluate(test_x, test_y, batch_size=64, digits=4, truncating=False)
     print(report)
 
