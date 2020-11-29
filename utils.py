@@ -3,7 +3,7 @@
 def data_load(language, datasets_type) -> tuple:
     data_x = []
     data_y = []
-    with open("./corpus/"+language+"/"+language+"_"+datasets_type+".txt", 'r', encoding='utf-8') as f:
+    with open("./corpus/" + language + "/" + language + "_" + datasets_type + ".txt", 'r', encoding='utf-8') as f:
         for line in f.readlines():
             seq = line.strip().split("\t")
 
