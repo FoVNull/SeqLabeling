@@ -16,9 +16,12 @@ def data_load(language, datasets_type) -> tuple:
 def generate_result(result, test_set, language):
     task_no = {"Ind": '1', "Lao": '2'}
     # 任务X-队名-prediction-Y.txt
-    with open("./output/任务" + task_no[language] + "-DUFLER-prediction-1.txt", 'w', encoding='utf-8') as f:
+    with open("./output/任务" + task_no[language] + "-DUFLER-prediction-2.txt", 'w', encoding='utf-8') as f:
         for i in range(len(result)):
+            if language == "Ind":
+                f.write("id:"+str(i)+"\n")
             for j in range(len(test_set[i])):
                 f.write(test_set[i][j] + "\t" + result[i][j] + "\n")
+            f.write("\n")
 
 
