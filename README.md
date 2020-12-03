@@ -1,7 +1,7 @@
 # POS Tagger
 Build a POS Tagger for Lao and Bahasa Indonesia  
 2020云山杯“低资源语言序列标注任务评测”任务：印尼语和老挝语词性标注  
-云山杯...  
+..云山  
 <img src='https://upload.thwiki.cc/thumb/a/af/%E4%BA%91%E5%B1%85%E4%B8%80%E8%BD%AE%26%E4%BA%91%E5%B1%B1%EF%BC%88%E6%B1%82%E9%97%BB%E5%8F%A3%E6%8E%88%EF%BC%89.png/450px-%E4%BA%91%E5%B1%85%E4%B8%80%E8%BD%AE%26%E4%BA%91%E5%B1%B1%EF%BC%88%E6%B1%82%E9%97%BB%E5%8F%A3%E6%8E%88%EF%BC%89.png' height="300px">
 
 ### 版本说明
@@ -14,6 +14,7 @@ Build a POS Tagger for Lao and Bahasa Indonesia
 >- preprocess 语料预处理
 >>- dataset_split.py 挑选训练/验证/测试集  
 >>- format_process.py 调整语料格式
+>>- process_test.py 测试集的预处理
 >- utils.py 工具包(与模型训练无直接关联的工作)
 >- run.py 模型训练
 
@@ -56,4 +57,11 @@ def get_entities(seq: List[str], *, suffix: bool = False) -> List[Tuple[str, int
 
     return chunks
 ```
+### 结果 [排名(队伍：DUFLER)](http://superting.cn/data-competiton/sign/)  
+| |Ind|Lao|
+|:----:|:----:|:----:|
+|acc|90.31%|85.13%|
+
+### 算法说明 [BiLSTM_CRF](算法说明文档/算法说明.md)
+总结：只能说很幸运😂
 
